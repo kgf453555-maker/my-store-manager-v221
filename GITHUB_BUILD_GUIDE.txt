@@ -1,0 +1,20 @@
+MY STORE MANAGER V2.0 - ONE-CLICK GITHUB APK BUILD
+
+1. Go to https://github.com and sign in.
+2. Create a NEW repository. Example name: my-store-manager-v2
+3. Choose Public or Private. Leave "Add a README file" unchecked.
+4. Open the repository and choose Add file -> Upload files.
+5. Upload ALL files and folders from this project root. Make sure .github/workflows/build-apk.yml is included.
+6. Click Commit changes.
+7. Open the Actions tab.
+8. Select "Build My Store Manager APK".
+9. Click "Run workflow" -> select the main branch -> click the green "Run workflow" button.
+10. Wait until the workflow has a green check mark.
+11. Open the completed workflow run.
+12. Scroll to Artifacts and download "My-Store-Manager-V2.0-debug-APK".
+13. Extract the downloaded artifact ZIP. Inside is the APK file.
+14. Transfer the APK to your Android phone and install it.
+
+If the build shows a red X, open the failed workflow, copy the error log, and use it for troubleshooting.
+
+NOTE: This workflow builds a DEBUG APK. It does not create a Play Store signed release APK.
